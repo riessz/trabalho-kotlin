@@ -1,0 +1,8 @@
+<resources>
+    <style name="Base.Theme.Investidor" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="android:windowBackground">@color/fundo</item>
+    </style>
+
+    <style name="Theme.Investidor" parent="Base.Theme.Investidor" />
+</resources>
