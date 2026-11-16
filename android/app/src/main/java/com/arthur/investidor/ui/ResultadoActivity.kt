@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import com.arthur.investidor.R
 import com.arthur.investidor.databinding.ActivityResultadoBinding
 import com.arthur.investidor.util.aplicarInsets
+import com.arthur.investidor.util.corDoPerfil
 import com.arthur.investidor.util.mostrarMensagem
 
 class ResultadoActivity : AppCompatActivity() {
@@ -35,12 +36,6 @@ class ResultadoActivity : AppCompatActivity() {
         binding.btnCompartilhar.setOnClickListener { compartilhar(perfil, pontuacao, recomendacao) }
         binding.btnSaibaMais.setOnClickListener { abrirSite() }
         binding.btnVoltar.setOnClickListener { voltarAoInicio() }
-    }
-
-    private fun corDoPerfil(perfil: String) = when (perfil) {
-        "Conservador" -> R.color.perfil_conservador
-        "Moderado" -> R.color.perfil_moderado
-        else -> R.color.perfil_arrojado
     }
 
     /** Intent implícita: o Android mostra os apps que sabem compartilhar texto. */

@@ -38,3 +38,12 @@ python -m pytest -q
 ```
 
 Documentação completa dos endpoints em [docs/API.md](docs/API.md).
+
+## App Android
+
+Projeto em `android/` (Kotlin + XML + Retrofit). Abra no Android Studio, suba a API e rode no emulador.
+
+Telas (6 Activities): Login → Home → Questionário → Resultado, mais Histórico (RecyclerView + CardView, exclusão com confirmação) e Detalhe (respostas e edição da observação).
+Intents implícitas no resultado: compartilhar (`ACTION_SEND`) e abrir site (`ACTION_VIEW`).
+
+Para celular físico, altere `BASE_URL` em `RetrofitClient.kt` para o IP do PC.

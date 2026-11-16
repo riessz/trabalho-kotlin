@@ -24,6 +24,9 @@ class HomeActivity : AppCompatActivity() {
         binding.cardNovaAvaliacao.setOnClickListener {
             startActivity(Intent(this, QuestionarioActivity::class.java))
         }
+        binding.cardHistorico.setOnClickListener {
+            startActivity(Intent(this, HistoricoActivity::class.java))
+        }
         binding.btnSair.setOnClickListener { sair() }
     }
 
